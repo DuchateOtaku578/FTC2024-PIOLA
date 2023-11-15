@@ -29,11 +29,11 @@ public class PruebaServo extends LinearOpMode {
 
 
 
-            if (gamepad1.left_bumper) {
+            if (gamepad1.a) {
                 posicion -= 0.1;
                 sleep(300);
             }
-            else if (gamepad1.right_bumper) {
+            else if (gamepad1.b) {
                 posicion += 0.1;
                 sleep(300);
             }
@@ -42,7 +42,7 @@ public class PruebaServo extends LinearOpMode {
                 posicion = 0;
             } else if (posicion > 1) {
                 posicion = 1;
-            } else if(gamepad1.right_bumper){
+            } else if(gamepad1.x){
                 posicion = 0.25;
             }
 
